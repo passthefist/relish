@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  scheduledTime: 2013-06-08 04:59:35
+  release: 
+
+two:
+  scheduledTime: 2013-06-08 04:59:35
+  release: 

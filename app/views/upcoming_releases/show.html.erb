@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Scheduledtime:</b>
+  <%= @upcoming_release.scheduledTime %>
+</p>
+
+<p>
+  <b>Release:</b>
+  <%= @upcoming_release.release %>
+</p>
+
+
+<%= link_to 'Edit', edit_upcoming_release_path(@upcoming_release) %> |
+<%= link_to 'Back', upcoming_releases_path %>

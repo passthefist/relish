@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Requester:</b>
+  <%= @release.requester %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @release.description %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%= @release.url %>
+</p>
+
+<p>
+  <b>Branch:</b>
+  <%= @release.branch %>
+</p>
+
+
+<%= link_to 'Edit', edit_release_path(@release) %> |
+<%= link_to 'Back', releases_path %>

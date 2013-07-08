@@ -1,0 +1,45 @@
+<div data-ng-app>
+<div class="row">
+	<div class="span8">
+		<form action="billing" method="post" class="form-horizontal form-actions" id="billingform" accept-charset="utf-8" data-ng-controller="Releases">
+			<div class="control-group">
+				<label for="changes" class="control-label">	
+					Business Changes
+				</label>
+				<div class="controls">
+					<textarea name="changes" type="changes" value="" id="changes"></textarea>
+					<span class="help-inline">From a user's perspective, what changed?</span>
+				</div>
+			</div>
+
+			<div class="control-group">
+				<label for="verify" class="control-label">	
+					Verification Requirements
+				</label>
+				<div class="controls">
+					<textarea name="verify" value="" id="verify"></textarea>
+					<span class="help-inline">What needs to be done to ensure the changes are correct?</span>
+				</div>
+			</div>
+
+			<div class="control-group">
+				<label for="pull_request" class="control-label">	
+					Pull request
+				</label>
+				<div class="controls"><input name="pull_request" type="text" value="" id="pull_request">
+				</div>
+			</div>
+
+			<div class="control-group">
+				<div data-ng-repeat="date in dates">
+					<div data-ng-class="{available: date.available}" class = "controls">{{ date.title }}</div>
+				</div>
+			</div>
+			
+			<div>
+				<button type="submit" class="btn btn-large btn-primary">Schedule Release</button>
+			</div>
+		</form>
+	</div>
+</div>
+</div>

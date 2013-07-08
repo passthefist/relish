@@ -1,0 +1,25 @@
+<%= form_for(@upcoming_release) do |f| %>
+  <% if @upcoming_release.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@upcoming_release.errors.count, "error") %> prohibited this upcoming_release from being saved:</h2>
+
+      <ul>
+      <% @upcoming_release.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :scheduledTime %><br />
+    <%= f.datetime_select :scheduledTime %>
+  </div>
+  <div class="field">
+    <%= f.label :release %><br />
+    <%= f.text_field :release %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

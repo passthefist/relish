@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  requester: MyString
+  description: MyString
+  url: MyString
+  branch: MyString
+
+two:
+  requester: MyString
+  description: MyString
+  url: MyString
+  branch: MyString
